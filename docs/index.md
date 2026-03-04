@@ -1,90 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Latent Space of Equational Theories - Research Summary</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #24292e;
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 40px;
-            background-color: #fff;
-        }
-        header {
-            border-bottom: 1px solid #eaecef;
-            margin-bottom: 40px;
-            padding-bottom: 20px;
-            text-align: center;
-        }
-        h1 { font-size: 2.5em; font-weight: 600; margin-bottom: 10px; }
-        .authors { color: #586069; font-size: 1.2em; margin-bottom: 5px; }
-        .metadata { color: #0366d6; font-family: monospace; }
-        
-        .abstract {
-            background: #f6f8fa;
-            border: 1px solid #d1d5da;
-            padding: 25px;
-            border-radius: 6px;
-            margin-bottom: 40px;
-        }
-        .abstract h2 { margin-top: 0; font-size: 1.2em; color: #24292e; border: none; }
-        
-        h2 { 
-            font-size: 1.75em; 
-            border-bottom: 1px solid #eaecef; 
-            padding-bottom: 0.3em; 
-            margin-top: 1.5em; 
-        }
-        .highlight-box {
-            border-left: 4px solid #28a745;
-            padding-left: 15px;
-            margin: 20px 0;
-            background-color: #f0fff4;
-            padding: 10px 15px;
-        }
-        code {
-            background-color: rgba(27,31,35,0.05);
-            padding: 0.2em 0.4em;
-            border-radius: 3px;
-            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-        }
-        footer {
-            margin-top: 60px;
-            padding-top: 20px;
-            border-top: 1px solid #eaecef;
-            font-size: 0.9em;
-            color: #6a737d;
-            text-align: center;
-        }
-
-.table-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-  }
-
-  table {
-    border-collapse: collapse;
-    width: 50%;
-    font-family: Arial, sans-serif;
-  }
-
-  th, td {
-    border: 1px solid #dddddd;
-    text-align: center;
-    padding: 12px;
-  }
-
-  th {
-    background-color: #f2f2f2;
-  }
-    </style>
-</head>
-<body>
+---
+layout: default
+title: The Latent Space of Equational Theories - Research Summary
+---
 
 <header>
     <h1>The Latent Space of Equational Theories</h1>
@@ -98,7 +15,7 @@
 </div>
 
 <section>
-    <h2>Key Research Highlights</h2>
+    <h2>Main Points</h2>
     <p>This study introduces an experimental approach to logic by treating mathematical concepts as vertices in a geometric latent space.</p>
     
     <div class="highlight-box">
@@ -151,7 +68,7 @@ The signature of an equation is the ordered pair with the number of operations o
 
 <div style="width: 100%; height: 600px; overflow: hidden; border: 1px solid #eaecef; border-radius: 6px;">
         <iframe 
-            src="Images/figure_6.html" 
+            src="{{ site.baseurl }}Images/figure_6.html" 
             width="100%" 
             height="600px" 
             frameborder="0" 
@@ -159,19 +76,30 @@ The signature of an equation is the ordered pair with the number of operations o
         </iframe>
     </div>
     <p>
-    The code is available in <link>http:/Notebooks/Sampling%204x4%20and%208x8%20magmas.ipynb</link>
+    The code is available in <a href="http:/Notebooks/Sampling%204x4%20and%208x8%20magmas.ipynb">Notebooks/Sampling 4x4 and 8x8 magmas.ipynb</a>
     </p>
 
     <h3>Changing the Magma Sizes</h3>
-    Finite magmas are represented as a bidimensional array of size nXn of numbers between 1 and n. The following video shows how the positions of the equations' PCA changes when the size of their corresponding magmas is varied:
+    Finite magmas are represented as a bidimensional array of size $n\times n$ of numbers between $1$ and $n$. The following video shows how the positions of the equations' PCA changes when the size of their corresponding magmas is varied:
     <video controls loop style="max-width: 100%; width: 100%; height: auto; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-        <source src="Images/yzpca.mp4" type="video/mp4">
+        <source src="{{ site.baseurl }}Images/yzpca.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 </section>
 
+## Visualizing the Implications
+True implications are visualized as arrows going from the point representing the hypothesis to the tail, i.e., the conclusion.
+
+<div style="width: 100%; height: 600px; overflow: hidden; border: 1px solid #eaecef; border-radius: 6px;">
+        <iframe 
+            src="{{ site.baseurl }}Images/figure_13.html" 
+            width="100%" 
+            height="600px" 
+            frameborder="0" 
+            scrolling="yes">
+        </iframe>
+    </div>
+    
 <footer>
     <p>Source Content: <a href="https://arxiv.org/abs/2601.20759">arXiv:2601.20759v1</a> &bull; Formatted for Project Documentation (2026)</p>
 </footer>
-</body>
-</html>
