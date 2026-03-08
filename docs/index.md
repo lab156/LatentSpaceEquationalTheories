@@ -43,7 +43,7 @@ title: The Latent Space of Equational Theories - Research Summary
 <section>
 <h2>Visualizing the PCA of Individual Equations</h2>
 <p>
-The signature of an equation is the ordered pair with the number of operations on the left and right hand side of the equation respectively. In the figure below, the points are colored according to signature with the following values.
+The <em>signature</em> of an equation is the ordered pair with the number of operations on the left and right hand side of the equation respectively. In the figure below, the points are colored according to signature with the following values. The figure shows an intricate pattern of clustering and stratification by signatures. The equational theory $(\forall x)(x = x)$ has been removed for scale.
    </p>
 
 <div class="table-container">
@@ -66,17 +66,17 @@ The signature of an equation is the ordered pair with the number of operations o
   </table>
 </div>
 
-<div style="width: 100%; height: 600px; overflow: hidden; border: 1px solid #eaecef; border-radius: 6px;">
+<div style="width: 115%; height: 720px; overflow: hidden; border: 1px solid #eaecef; border-radius: 6px;">
         <iframe 
-            src="{{ site.baseurl }}Images/figure_6.html" 
+            src="{{ site.baseurl }}Images/figure_20.html" 
             width="100%" 
-            height="600px" 
+            height="100%" 
             frameborder="0" 
             scrolling="yes">
         </iframe>
     </div>
     <p>
-    The code is available in <a href="http:/Notebooks/Sampling%204x4%20and%208x8%20magmas.ipynb">Notebooks/Sampling 4x4 and 8x8 magmas.ipynb</a>
+    The code is available in <a href="http://Individual%20Equation%20PCA%20viz.ipynb">Notebooks/Individual Equation PCA viz</a>
     </p>
 
     <h3>Changing the Magma Sizes</h3>
@@ -90,11 +90,37 @@ The signature of an equation is the ordered pair with the number of operations o
 ## Visualizing the Implications
 True implications are visualized as arrows going from the point representing the hypothesis to the tail, i.e., the conclusion.
 
-<div style="width: 100%; height: 600px; overflow: hidden; border: 1px solid #eaecef; border-radius: 6px;">
+<div style="width: 100%; height: 720px; overflow: hidden; border: 1px solid #eaecef; border-radius: 6px;">
         <iframe 
-            src="{{ site.baseurl }}Images/figure_13.html" 
+            src="{{ site.baseurl }}Images/figure_25.html" 
             width="100%" 
             height="600px" 
+            frameborder="0" 
+            scrolling="yes">
+        </iframe>
+    </div>
+    
+### Equivalence Cliques
+Equivalent equational theories form cliques or equivalence classes. In the latent space they appear as clusters of points, in the figure below we add lines connecting each member of the clique to the center of mass of the clique.
+
+<div style="width: 100%; height: 720px; overflow: hidden; border: 1px solid #eaecef; border-radius: 6px;">
+        <iframe 
+            src="{{ site.baseurl }}Images/figure_31.html" 
+            width="100%" 
+            height="100%" 
+            frameborder="0" 
+            scrolling="yes">
+        </iframe>
+    </div>
+
+### Longest Paths
+The longest possible path has 16 equational theories. In the following image three different paths with the maximum length appear in different colors.
+
+<div style="width: 100%; height: 720px; overflow: hidden; border: 1px solid #eaecef; border-radius: 6px;">
+        <iframe 
+            src="{{ site.baseurl }}Images/figure_30.html" 
+            width="100%" 
+            height="100%" 
             frameborder="0" 
             scrolling="yes">
         </iframe>
