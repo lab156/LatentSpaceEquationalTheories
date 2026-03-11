@@ -16,15 +16,15 @@ title: The Latent Space of Equational Theories - Research Summary
 
 <section>
     <h2>Main Points</h2>
-    <p>This study introduces an experimental approach to logic by treating mathematical concepts as vertices in a geometric latent space.</p>
+    <p>This study introduces an experimental approach to logic by treating mathematical concepts as vertices in a geometric latent space. And the edges are implications between these concepts.</p>
     
     <div class="highlight-box">
         <strong>The Main Objective:</strong> To map the relationships between 4,694 distinct equational theories and visualize the underlying structure of mathematical reasoning.
     </div>
 
     <ul>
-        <li><strong>Methodology:</strong> The researchers utilized <strong>Principal Component Analysis (PCA)</strong> to reduce the dimensionality of the feature space into a 3D representation.</li>
-        <li><strong>Theoretical Foundation:</strong> The work uses the concept of <em>Stone pairing</em> originating from finite model theory to bridge the gap between categorical logic and statistical learning.</li>
+        <li><strong>Methodology:</strong> Using <strong>Principal Component Analysis (PCA)</strong> to reduce the dimensionality of the feature space into a 3D representation.</li>
+        <li><strong>Theoretical Foundation:</strong> The work uses the concept of <em>Stone pairing</em> originating from finite model theory to connect categorical logic and statistical learning.</li>
         <li><strong>Discovery:</strong> The experiment reveals a rich, well-organized landscape where logical implications form visible "flows," illustrating the benefits of an experimental approach to pure logic.</li>
     </ul>
 </section>
@@ -33,9 +33,9 @@ title: The Latent Space of Equational Theories - Research Summary
     <h2>Implementation & Visualization</h2>
     <p>To derive the latent space, the following steps were taken:</p>
     <ol>
-        <li>Analysis of <code>n = 20,000</code> magmas of size 8 to extract feature variability.</li>
-        <li>Computation of the center of gravity and covariance matrix for the 4,694 theories.</li>
-        <li>Application of PCA to keep the first three principal components (X, Y, Z), which capture the majority of the data's variability.</li>
+        <li>Analysis of randomly sampled finite magmas of size 8 to extract feature variability.</li>
+        <li>Application of PCA to keep the first three principal components (X, Y, Z), which capture the majority of the data's variability, and are amenable to visualization.</li>
+        <li>Computation of several statitics like the center of gravity  of equivalence cliques and distances between hypotheses and conclusions.</li>
     </ol>
 </section>
 
