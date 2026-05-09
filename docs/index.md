@@ -80,12 +80,21 @@ The <em>signature</em> of an equation is the ordered pair with the number of ope
     </p>
 
     <h3>Changing the Magma Sizes</h3>
-    Finite magmas are represented as a bidimensional array of size $n\times n$ of numbers between $1$ and $n$. The following video shows how the positions of the equations' PCA changes when the size of their corresponding magmas is varied:
+    In the following animation, finite magmas are represented as a bidimensional array of size $n\times n$ of numbers between $1$ and $n$, for $4\leq n \leq 18$. It shows how the positions of the equations' PCA changes when the size of their corresponding magmas is varied. The second and third principal components are shown.
     <video controls loop style="max-width: 100%; width: 100%; height: auto; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
         <source src="{{ site.baseurl }}Images/yzpca.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
+    
+Interestingly, the shrinking effect of increasing the size of the magmas' multiplication tables, appears to be reverted by increasing the number of random samples. In the following animation we sample increasingly large number of nested sets of random magmas all with the same size of $8\times 8$. The shape of the points now increases. The number of samples is increased from 11,000 to 220,000, in equally spaces increments.
+
+<video controls loop style="max-width: 100%; width: 100%; height: auto; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <source src="{{ site.baseurl }}Images/deepdive.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 </section>
+
+
 
 ## Visualizing the Implications
 True implications are visualized as arrows going from the point representing the hypothesis to the tail, i.e., the conclusion.
