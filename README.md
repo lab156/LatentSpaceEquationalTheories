@@ -2,7 +2,7 @@
 ## Important links:
 
 * [arXiv Paper](https://arxiv.org/abs/2601.20759)
-* [Project Website](https://lab156.github.io/LatentSpaceEquationalTheories/)
+* [Project Website](https://luisberlioz.github.io/LatentSpaceEquationalTheories/)
 * [Original Equational Theories site](https://teorth.github.io/equational_theories/)
 
 ## Setting Up
