@@ -1,7 +1,9 @@
 # The Latent Space of Equational Theories
-Repo for the paper "The Latent Space of Equational Theories" on https://arxiv.org/abs/2601.20759
+## Important links:
 
-Project Website: https://lab156.github.io/LatentSpaceEquationalTheories/
+* [arXiv Paper](https://arxiv.org/abs/2601.20759)
+* [Project Website](https://lab156.github.io/LatentSpaceEquationalTheories/)
+* [Original Equational Theories site](https://teorth.github.io/equational_theories/)
 
 ## Setting Up
 Create and `.env` file with the following fields.
